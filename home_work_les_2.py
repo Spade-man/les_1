@@ -46,7 +46,7 @@ print('Задача 6 Найти сумму цифр числа')
 n = input()
 sum = 0
 for i in n:
-    if i not in ['.', ',']:
+    if i != '.':
         sum += int(i)
 print(sum, '\n')
 
@@ -55,7 +55,7 @@ print('Задача 7 Найти произведение цифр числа.')
 n = input()
 mul = 1
 for i in n:
-    if i not in ['.', ',']:
+    if i != '.':
         mul *= int(i)
 print(mul, '\n')
 
@@ -83,6 +83,6 @@ print('Задача 10 Найти количество цифр 5 в числе'
 n = input()
 s = 0
 for i in n:
-    if i not in ['.', ','] and i == '5':
+    if i != '.' and i == '5':
         s += 1
 print('Цифр "5" в числе ', n, ': ', s)
