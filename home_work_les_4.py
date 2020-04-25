@@ -43,6 +43,7 @@ dates = []
 with open('\\log', 'r') as f:
     for i in f:
         dates.append(i[:23])
+f.close()
 print(max(dates))
 """Марат напишите, пожалуйста, код - как работать с этим файлом через URL
 
