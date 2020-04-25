@@ -61,6 +61,7 @@ c = {i: a.count(i) for i in a}
 
 #5) вывести 5 наиболее часто встречающихся слов (sort), вывести количество разных слов в тексте (set).')
 z = sorted({a.count(i): i for i in a}.items(), reverse=True)
+print(z)
 print('5 наиболее встречающихся слов в тексте: ', end='')
 for i in z[0:5]:
     print(i[1], end=', ')
