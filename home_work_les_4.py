@@ -29,18 +29,18 @@ def rarest_letter(z):
     return (letters_count[0][1])
 
 
-source = F(['уАбрам', 'бваз', 'Аввакум', 'бвгуст', 'Августин', 'фАвдей', 'Авраам', 'Автандил',
-                      'Акгап', 'Агафон', 'бггей', 'Адам', 'фадис', 'фАдольф', 'Адриан'], 10000)
-print(source)
-print(most_common_name(source))
-print(rarest_letter(source))
+# source = F(['уАбрам', 'бваз', 'Аввакум', 'бвгуст', 'Августин', 'фАвдей', 'Авраам', 'Автандил',
+#                       'Акгап', 'Агафон', 'бггей', 'Адам', 'фадис', 'фАдольф', 'Адриан'], 10000)
+# print(source)
+# print(most_common_name(source))
+# print(rarest_letter(source))
 
 
 # # PRO:
 # 4.  В файле с логами найти дату самого позднего лога (по метке времени):
 # https://drive.google.com/open?id=1pKGu-u2Vvtx4xK8i2ZhOzE5rBXyO4qd8
 dates = []
-with open('\\log', 'r') as f:
+with open('C:\\Users\\spade\\Downloads\\log', 'r') as f:
     for i in f:
         dates.append(i[:23])
 f.close()
