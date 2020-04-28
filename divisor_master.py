@@ -21,7 +21,7 @@ def biggest_simp_divder(n):
     for i in all_dividers(n):
         if is_simple(i):
             lst_smpl_dvdrs.append(i)
-    print(max(lst_smpl_dvdrs))
+    return (max(lst_smpl_dvdrs))
 
 
 #4 Функция выводит каноническое разложение числа
@@ -38,11 +38,12 @@ def canon(n):
 
 #5 Самый большой делитель не равный числу
 def biggest_divder(n):
-    print((all_dividers(n)[-2] if n != 1 else 1))
+    return ((all_dividers(n)[-2] if n != 1 else 1))
 
 
-# biggest_divder(10123)
-# print(is_simple(10123))
-# print(all_dividers(10123))
-# biggest_simp_divder(10123)
-# print(canon(63))
+print(biggest_divder(66432))
+print(is_simple(8))
+print(all_dividers(8))
+print(biggest_simp_divder(8))
+print(canon(8))
+
